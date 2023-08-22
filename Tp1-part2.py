@@ -1,5 +1,5 @@
 
-    #Ejercicio1
+#Ejercicio1
 base = float(input("Ingrese el valor de la baase del rectangulo: "))
 altura = float(input("Ingrese el valor de la altura del rectángulo: "))
 
@@ -12,7 +12,7 @@ print(f'El area del rectangulo es: {area_rectangulo}. \nEl perimetro del rectang
 
 cateto1= float(input("Ingrese el valor del cateto 1: "))
 cateto2= float(input("Ingrese el valor del cateto 2: "))
-hipotenusa= ((cateto1*2)+(cateto22))*(1/2)
+hipotenusa= ((cateto1*2)+(cateto2*2))*(1/2)
 print("La hipotenusa del triángulo es: ",hipotenusa)
 
 #Ejercicio 3
@@ -68,7 +68,7 @@ print(f"El equivalente en celsius de {farenh}°F es: {celsius}°C")
 num = 0
 suma = 0
 for i in range(3):
-num = float(input(f"Ingrese la el numero {i+1}: "))
+    num = float(input(f"Ingrese la el numero {i+1}: "))
 suma = suma + num
 print(f"Media: {suma/3}")
 
@@ -132,7 +132,7 @@ print(f"La raiz cuadrada de {numero} es: {r_cuadrada} y su raiz cubica es: {r_cu
 num = input("Ingrese un número:")
 inversa = ""
 for i in range(len(num)):
-inversa += num[len(num) - 1 - i]
+    inversa += num[len(num) - 1 - i]
 print(f"num: {num}")
 print(f"Inversa: {inversa}")
 
