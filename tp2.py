@@ -104,13 +104,43 @@ elif edad > 18 :
     print("Valor de la entrada: $1000")
 
 #Ejercicio 11
-edad=float(input('Ingrese su edad: '))
-if(edad<=4):
-    print('Usted no debe abonar entrada')
-elif(edad<=18):
-    print('Usted debe abonar $500 de entrada')
+
+eleccion=input('Desea usted una pizza vegetariana? ingrese S para si y N para no: ')
+eleccion=eleccion.upper()
+if (eleccion=='S'):
+    print('Los ingredientes que usted puede elegir para esta pizza son Pimiento y Tofu')
+    ingrediente=input('Ingrese el Ingrediente deseado: (la letra A para seleccionar Pimiento o B para seleccionar Tofu) ')
+    ingrediente=ingrediente.upper()
+    if (ingrediente=='A'):
+        ingrediente_elegido='pimiento'
+        print('Su pizza elegida es vegetariana')
+        print('Los ingredientes de su pizza son: mozzarella, tomate y',ingrediente_elegido)
+    elif (ingrediente=='B'):
+        ingrediente_elegido='tofu' 
+        print('Su pizza elegida es vegetariana')
+        print('Los ingredientes de su pizza son: mozzarella, tomate y',ingrediente_elegido)
+    else:
+        print('Ingrese una opción válida')
+elif(eleccion=='N'):
+    print('Los ingredientes para esta pizza son Peperoni, Jamón y Salmón')
+    ingrediente=input('Ingrese el Ingrediente deseado: (la letra A para seleccionar Peperoni, B para seleccionar Jamón o C para seleccionar Salmón) ')
+    ingrediente=ingrediente.upper()
+    if (ingrediente=='A'):
+        ingrediente_elegido='peperoni'
+        print('Su pizza elegida no es vegetariana')
+        print('Los ingredientes de su pizza son mozarella, tomate y',ingrediente_elegido)
+    elif(ingrediente=='B'):
+        ingrediente_elegido='jamón'
+        print('Su pizza elegida no es vegetariana')
+        print('Los ingredientes de su pizza son mozarella, tomate y',ingrediente_elegido)
+    elif(ingrediente=='C'):
+        ingrediente_elegido='salmón'
+        print('Su pizza elegida no es vegetariana')
+        print('Los ingredientes de su pizza son mozarella, tomate y',ingrediente_elegido)
+    else:
+        print('Ingrese una opción válida')
 else:
-    print('Usted debe abonar $1000 de entrada')
+    print('Error, ingrese una opcion correcta')
 
 
 
