@@ -54,6 +54,19 @@ if (anio % 4==0 and anio % 100!=0) or (anio %400==0):
 else:
     print(f"El año {anio} no es bisiesto")
 
+    # Ejercicio 7
+
+num1 = int(input("Numero 1: "))
+num2 = int(input("Numero 2: "))
+num3 = int(input("Numero 3: "))
+if (num1 < num2):
+    menor = num1
+elif (num2 < num3):
+    menor = num2
+else:
+    menor = num3
+print(f"Menor: {menor}")
+
 #Ejercicio 8
 
 #Se me pide que comprube si usuario y contraseña son correctos para acceder a camelot
@@ -117,7 +130,20 @@ if mayor % menor ==0:
 else:
     print(f"{mayor} no es multiplo de {menor}")
 
+# Ejercicio 14
 
+print("--- Ecuacion de primer grado ---")
+a = int(input("Ingrese a: "))
+b = int(input("Ingrese b: "))
+
+if a != 0:
+    x = (-b) / a
+    solucion = a * x + b
+    print("La ecuacion tiene una solucion unica")
+elif b == 0:
+    print("La ecuacion tiene varias soluciones")
+else:
+    print("La ecuacion no tiene solucion")
 
 #Ejercicio 15
 
