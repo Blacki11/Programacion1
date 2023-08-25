@@ -54,7 +54,15 @@ if (anio % 4==0 and anio % 100!=0) or (anio %400==0):
 else:
     print(f"El año {anio} no es bisiesto")
 
+#Ejercicio 8
 
+#Se me pide que comprube si usuario y contraseña son correctos para acceder a camelot
+usuario = str(input("Ingrese nombre de usuario: "))
+contrasenia = str(input("Ingresa la contraseña: "))
+if usuario == "Gwenevere" and contrasenia == "excalibur":                   #compruebo que ambos valores ingresados sean correctos para permitir el ingreso
+    print("Usuario y contraseña correctos. Puede ingresar a Camelot")
+else:
+    print("Acceso denegado")
 
 #Ejercicio 9
 
@@ -108,6 +116,28 @@ if mayor % menor ==0:
     print(f"{mayor} es multiplo de {menor}")
 else:
     print(f"{mayor} no es multiplo de {menor}")
+
+
+
+#Ejercicio 15
+
+import math
+print("Que desea calcular? Ingrese 't' o 'c' para elegir una de las opciones\nt) Área de un triángulo\nc) Área de un círculo") 
+respuesta = str(input("> "))
+respuesta = respuesta.lower() 
+
+if respuesta == "t" or respuesta == "c": 
+    if respuesta == "t": 
+        base_t = float(input("Escriba la base del triángulo: "))
+        altura_t = float(input("Escriba la altura del triángulo: "))
+        area_t = base_t*altura_t/2
+        print(f"El resultado del área es: {area_t}")
+    else:
+        radio = float(input("Ingrese el radio del circulo a calcular: ")) 
+        area_c = (radio**2)*math.pi
+        print(f"El resultado del área del círculo es: {area_c}")
+else:
+    print("No a elegido ninguna de las dos opciones")  
 
 #Ejercicio 16
 
