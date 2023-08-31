@@ -43,6 +43,18 @@ elif(candidato=='C'):
 else:
     print('Usted ha ingresado una opcion errónea')
 
+#Ejercicio 5
+
+vocales= ["a", "e", "i", "o", "u"]
+
+letra= input("Por favor, ingrese una letra cualquiera: ").lower()
+if (len(letra) > 1):
+    exit("No se pudo procesar el dato, por favor, ingrese solamente una letra")
+else:
+    if letra in vocales:
+        print("Es vocal")
+    else:
+        print("No es vocal")
 
 
 #Ejercicio 6
@@ -142,7 +154,18 @@ elif(eleccion=='N'):
 else:
     print('Error, ingrese una opcion correcta')
 
+#Ejercicio 12
 
+anio_actual= int(input("Ingrese el año actual: "))
+anio_random= int(input("Ingrese un año cualquiera: "))
+cociente= 0
+
+if anio_actual > anio_random:
+    cociente= anio_actual - anio_random
+    print(f"Han pasado {cociente} años desde ese año.")
+else:
+    cociente= anio_random - anio_actual
+    print(f"Faltan {cociente} años para llegar al {anio_random}.")
 
 #Ejercicio 13
 
@@ -246,7 +269,26 @@ salario_total= (horas_normales * salario)+(horas_extras * salario *1.1)
 print('Su cantidad de horas extras trabajadas es de: ',horas_extras, ' horas')
 print('Su salario total es de: $',salario_total)
 
+#Ejercicio 19
 
+cantidad= int(input("Ingrese la cantidad de productos que desea comprar: "))
+descuento= 0.07
+costo_x_uni= 60
+costo_final= 0
+
+if cantidad > 1000:
+    costo_final= (1000 * costo_x_uni) - ((1000 * costo_x_uni)*descuento)
+    cantidad-= 1000
+    costo_final+= (cantidad * costo_x_uni)
+    print(f"El precio final con un descuento aplicado a parte del precio original es de ${costo_final}")
+else:
+    if cantidad == 1000:
+        costo_final= (cantidad * costo_x_uni) - ((cantidad * costo_x_uni)*descuento)
+        print(f"El precio final, con un descuento del 7%, es de ${costo_final}")
+    else:
+        if cantidad < 1000:
+            costo_final= cantidad * costo_x_uni
+            print(f"El precio final a pagar es de ${costo_final}")
 
 #Ejercicio 20
 
