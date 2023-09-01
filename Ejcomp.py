@@ -27,7 +27,7 @@ cadena = "Hoy hace frio"
 longitud = len(cadena)
 #Variable precio x2, pasar de valor decimal a entero
 precio = 5.50
-precio_entero = int(precio)
+precio_entero = float(precio)
 print(precio_entero)
 #Variables nombre y apellido y concatenarlas
 nombre = "Matias"

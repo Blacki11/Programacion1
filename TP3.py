@@ -64,14 +64,13 @@ for i in range(1,11):
         tabl = i*j
         print(f'{i}x{j}={tabl}')
 
-"""
-#8-	Escribir un programa que pida al usuario un número entero y muestre por pantalla un triángulo rectángulo como el de más abajo.
+#Ejercicio 8
 
+num=int(input("Ingrese un numero entero: "))
 
 for i in range(1,6):
-    num=int(input("Ingrese un numero entero: "))
     print(f'{num}' * i)
-"""
+
 # Ejercicio 9
 
 password= input("Por favor, ingrese su contraseña: ")
@@ -206,15 +205,27 @@ while True:
             maximo = numero
 if maximo is not None:
     print(f"El número máximo ingresado fue: {maximo}")
-"""
+
 #Ejercicio 22
 
+num_pares=0
+
 while True:
-     numero= int(input("Ingresa un número entero positivo(-1 para salir): "))
-     
-     if numero == 0:
-          break
-"""
+    numero= int(input("Ingresa un número entero positivo(-1 para salir): "))
+    
+
+    if numero == -1:
+        break
+
+    suma_num=str(numero)
+    suma_digitos=0
+    for digito in suma_num:
+        suma_digitos+=int(digito)
+    print(f'la suma de sus digitos es : {suma_digitos}')
+    if numero % 2 ==0:
+        num_pares+=1
+print(f'la cantidad de numeros pares es: {num_pares}')
+
 #Ejercicio 23
 
 buys= int(input("Por favor, ingrese el monto de su compra: "))
