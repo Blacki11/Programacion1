@@ -1,3 +1,8 @@
+#Ejercicio 1
+
+word = str(input("Ingrese una palabra: "))
+for i in range(10):
+    print(word)
 
 #Ejercicio 2
 
@@ -130,6 +135,48 @@ while word != "salir":
         print("      " + word)
 
 print("--- se derrumbo la cueva, no más eco ---")
+
+#Ejercicio 14
+
+num1 = int(input("Ingrese un número entero: "))
+num2 = int(input("Ingrese otro número entero: "))
+if num1<num2:                       
+    for i in range(num1, num2+1):   
+        if i%2==0:                  
+            print(f"{i} es par")
+        else:
+            print(f"{i} no es par")
+else:
+    for i in range(num2, num1+1):   
+        k = ((num1+num2)-i)         
+        if k%2==0:                  
+            print(f"{k} es par")
+        else:
+            print(f"{k} no es par")
+
+#Ejercicio 15
+
+dividers = []
+num = -1
+
+while num<=0:           
+    num = int(input("Ingrese un número entero mayor que cero: "))
+    if num<=0:
+        print("número inválido")
+
+for i in range(num+1):
+    if num%(i+1) == 0:
+        dividers.append(i+1)
+    else:
+        continue
+
+print(f"Los divisores de {num} son: ") 
+
+for k in dividers:
+    if k == num:
+        print(k)
+    else:
+        print(k, end=", ")
 
 #Ejercicio 16
 
@@ -273,4 +320,3 @@ while n < num1:
     n+=1
     num2 = num2*n
 print("El factorial de",num1,"es",num2)
-
