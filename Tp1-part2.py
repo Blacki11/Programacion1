@@ -129,6 +129,7 @@ r_cubica = numero**1/3
 print(f"La raiz cuadrada de {numero} es: {r_cuadrada} y su raiz cubica es: {r_cubica}")
 
 #Ejercicio 13
+
 num = input("Ingrese un número:")
 inversa = ""
 for i in range(len(num)):
@@ -147,6 +148,7 @@ numero_b= numero_h
 print(f"El primer número ingresado cambió a {numero_a} y el segundo número ingresado cambió a {numero_b}")
 
 #Ejercicio 15
+
 hora_inicial = int(input("Ingrese la hora de salida: "))
 minuto_inicial = int(input("ingrese el minuto de salida: "))
 segundo_inicial = int(input("ingrse el segundo de salida: "))
@@ -161,6 +163,7 @@ print(f"Hora de salida:   {hora_inicial} hs  {minuto_inicial} min {segundo_inici
 print(f"Hora de llegada:   {hora_final} hs {minuto_final} min {segundo_final} seg")
 
 #Ejercicio 16
+
 nombre= input("Ingrese su nombre: ")
 apellido1= input("Ingrese su primer apellido: ")
 apellido2= input("Ingrese su segundo apellido: ")
@@ -168,6 +171,7 @@ iniciales= nombre[0],apellido1[0],apellido2[0]
 print("Sus iniciales son: ",iniciales)
 
 #Ejercicio 17
+
 usuario=input('ingrese su nombre: ')
 print('ahora estás en la matrix, ', usuario)
 
@@ -187,11 +191,15 @@ año = int(input("Ingrese el año de tu nacimiento: "))
 print(f"El dia de tu nacimiento es: {dia}/{mes}/{año}")
 
 #Ejercicio 20
-fecha = ""
-fecha = input("Día de Nacimiento: ")
-fecha += input("Mes de Nacimiento: ")
-fecha += input("Año de Nacimiento: ")
-print(f"Fecha: {fecha}")
+
+fecha_nac= input("Ingrese la fecha de nacimiento en formato DDMMAA: ")
+if len(fecha_nac) !=8:
+    print("Formato incorrecto")
+else:
+    dia= fecha_nac[:2]
+    mes= fecha_nac[2:4]
+    anio= fecha_nac[4:]
+    print(f'{dia}/{mes}/{anio}')
 
 #Ej 21
 

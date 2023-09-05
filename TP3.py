@@ -100,8 +100,10 @@ else:
     while i * i <= numero:
         if numero % i == 0 or numero % (i + 2) == 0:
             print("No es primo")
+            break
         i += 6
-    print("Es primo")
+    else:
+        print("Es primo")
 
 #Ejercicio 11
 
